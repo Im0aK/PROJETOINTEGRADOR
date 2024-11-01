@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ArcadeRocket | Explore o Espaço!</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+
+    <!-- Cabeçalho --> 
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="index.html"> <!-- Link para a página inicial -->
+                    <img src="img/ArcadeRocket logo.png" alt="Logo Arcade Foguete">
+                </a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#capturas">Capturas</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                    <li><a href="creditos.html">Créditos</a></li> <!-- Link para a página de Créditos -->
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- TELA ESTRELADA/ BOTÃO  -->
+    <section class="hero">
+        <div class="overlay"></div>
+        <div class="stars">
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+        </div>
+        <div class="content">
+            <h1>Prepare-se para uma Aventura Espacial</h1>
+            <p>Sobreviva ao desconhecido, colete combustível e vá além das estrelas.</p>
+            <a href="pagina-destino.php" class="cta-btn">Começar Jornada</a>
+            <img src="img/foguete.png" alt="Foguete" class="rocket">
+        </div>
+    </section>
+    
+    <section id="sobre" class="section about">
+        <div class="container">
+            <h2>Prepare-se para decolar com o Arcade Rocket!</h2>
+            <p>Desvende os mistérios do espaço sideral pilotando seu foguete em alta velocidade. Desvie de asteroides, colete nossa gasosa e explore planetas desconhecidos.</p>
+        </div>
+    </section>
+    
+    <!-- Sessão capturas de tela -->
+    <section id="capturas" class="section gallery-section">
+        <div class="container">
+            <h2 class="gallery-title">Captura de Telas</h2>
+            <div class="gallery-section">
+                <div class="gallery">
+                    <div class="screenshot" onclick="expandImage(this)">
+                        <img src="img/screenshot 1.png" alt="Captura de tela 1">
+                    </div>
+                    <div class="screenshot" onclick="expandImage(this)">
+                        <img src="img/screenshot 2.png" alt="Captura de tela 2">
+                    </div>
+                    <div class="screenshot" onclick="expandImage(this)">
+                        <img src="img/screenshot 3.png" alt="Captura de tela 3">
+                    </div>
+                </div>
+            
+                <!-- Modal para visualização ampliada -->
+                <div class="modal" onclick="closeModal()">
+                    <span class="close">&times;</span>
+                    <img class="modal-content" id="expandedImg">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção de contato -->
+    <section id="contato" class="section contact-section">
+        <div class="container">
+            <h2>Fale Conosco</h2>
+            <br>
+            <div class="imgFale">
+                <img src="img/astronauta-removebg-preview.png" alt="contato" class="contact-image">
+            </div>
+            <form id="whatsappForm" onsubmit="sendWhatsAppMessage(event)" class="form">
+                <input type="text" id="name" name="name" placeholder="Nome" required>
+                <input type="email" id="email" name="email" placeholder="E-mail" required>
+                <textarea id="message" name="message" rows="5" placeholder="Sua Mensagem" required></textarea>
+                <button type="submit" class="btn">Enviar pelo WhatsApp</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 ArcadeRocket. Todos os direitos reservados.</p>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/"><img src="img/iconFacebook.png" alt="Facebook"></a>
+                <a href="https://www.instagram.com/"><img src="img/iconInstagram.png" alt="Instagram"></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Botão para voltar ao topo -->
+    <button id="backToTop" class="back-to-top">Voltar ao Topo</button>
+
+</body>
+</html>
